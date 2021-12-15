@@ -1,0 +1,36 @@
+1. update the system
+2. install php , apache2 , mysql-server,php-mysql, install other dependances shown in ubuntu wiki 'how to install wordpress in ubuntu' 
+3. mysql --version 8.0+
+4. mysql -> to check is that db installed
+5./q; -> exit database
+6. mysql -u root -p
+7. show database;
+8. create database mywp;
+9. show database; -> check that database is created
+	create user 'name'@'localhost' idenitfied by 'password';
+	grant all on mywp.* to 'name'@'localhost';
+
+10. download wordpress from wordpress.org/download/ tar.gz
+11. extract tar.gz
+12. rename extract file to newsite
+13. sudo mv newsite /var/www/html/
+14. check /var/www/html/ for newsite
+15. cd /var/www/html/newsite
+16. sudo subl wp-confing-smaple.php
+17. change the database name 'mywp'
+18. change the username name 'name'
+19. change the password to 'password'
+20. select all copy
+21. create wp-config.php in same dirctory past and save
+22. undo the changes did in wp-config-smaple.php
+23. web browser localhost/newsite
+24. configuring wordpress site
+ 	site Tile: newsite
+	username: newuser
+	password: 123456
+	check use of weak password
+	your email: abc@gmail.com
+	install wordpress 
+25. login to wordpress
+	username: newuser
+	password: 1234567
